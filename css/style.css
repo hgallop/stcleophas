@@ -1,0 +1,645 @@
+/* =============================================================
+   Saint Cleophas Outreach Ministry — Shared Stylesheet
+   Design: traditional & dignified, stained-glass accents
+   Fonts: EB Garamond (headings) · Lora (body)
+   ============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* --- Reset & base ------------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #1C1C1C;
+  background: #FDFAF4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: #A07828; text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; color: #8A6418; }
+img { max-width: 100%; height: auto; display: block; }
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #1C1C1C;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+}
+
+/* --- Layout ------------------------------------------------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* --- Stained-glass decorative strip ------------------------- */
+/* Mirrors the geometric coloured border on the business card  */
+.glass-strip {
+  height: 10px;
+  background: repeating-linear-gradient(
+    to right,
+    #40B4C4 0px,   #40B4C4 40px,
+    #fff    40px,  #fff    42px,
+    #E8862A 42px,  #E8862A 82px,
+    #fff    82px,  #fff    84px,
+    #8B7BB5 84px,  #8B7BB5 124px,
+    #fff   124px,  #fff   126px,
+    #C85A3A 126px, #C85A3A 166px,
+    #fff   166px,  #fff   168px,
+    #E8DCC8 168px, #E8DCC8 208px,
+    #fff   208px,  #fff   210px
+  );
+}
+
+/* --- Skip link ---------------------------------------------- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 9999;
+  background: #C9A050;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-family: 'EB Garamond', Georgia, serif;
+}
+.skip-link:focus { top: 0; }
+
+/* --- Site header -------------------------------------------- */
+.site-header {
+  background: #3A3F4B;
+  color: #fff;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+}
+
+.brand {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+  text-decoration: none;
+}
+.brand:hover { text-decoration: none; }
+
+.brand-logo {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+/* Fallback cross when logo image not yet placed */
+.brand-logo-fallback {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C9A050;
+}
+
+.brand-text .site-name {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  display: block;
+}
+.brand-text .site-tagline {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.75);
+  display: block;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Primary nav */
+nav.primary-nav {
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav.primary-nav a {
+  color: rgba(255,255,255,0.88);
+  padding: 0.45rem 0.75rem;
+  border-radius: 4px;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+nav.primary-nav a:hover,
+nav.primary-nav a:focus {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  text-decoration: none;
+}
+nav.primary-nav a.active {
+  color: #C9A050;
+  background: rgba(201,160,80,0.15);
+}
+
+/* Mobile nav */
+@media (max-width: 767px) {
+  .nav-toggle { display: block; }
+  nav.primary-nav {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.25rem 1.25rem 1rem;
+  }
+  nav.primary-nav.open { display: flex; }
+  nav.primary-nav a {
+    padding: 0.7rem 0.5rem;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+}
+
+/* --- Page hero (inner pages) -------------------------------- */
+.page-hero {
+  background: #3A3F4B;
+  color: #fff;
+  padding: 2.5rem 0 2.25rem;
+  text-align: center;
+}
+.page-hero h1 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 2.4rem;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+.page-hero p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+/* --- Home hero ---------------------------------------------- */
+.home-hero {
+  background: #3A3F4B;
+  color: #fff;
+  padding: 3rem 0 3.5rem;
+}
+.home-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .home-hero-inner { grid-template-columns: 1fr 340px; }
+}
+
+.hero-eyebrow {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #C9A050;
+  margin: 0 0 0.6rem;
+}
+.home-hero h1 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 2.75rem;
+  font-style: italic;
+  color: #fff;
+  margin: 0 0 1rem;
+}
+.hero-lead {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 1.75rem;
+  line-height: 1.7;
+}
+.hero-cta {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.next-service-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: #1C1C1C;
+}
+.nsc-label {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #C9A050;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.nsc-time {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #3A3F4B;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+.nsc-service {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3A3F4B;
+  margin-bottom: 0.5rem;
+}
+.nsc-loc {
+  font-size: 0.92rem;
+  color: #5A4A3A;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+.nsc-note {
+  font-size: 0.85rem;
+  color: #5A4A3A;
+  font-style: italic;
+  border-top: 1px solid #E8E0D0;
+  padding-top: 0.75rem;
+}
+.nsc-fb {
+  margin-top: 0.75rem;
+}
+
+/* --- Main content ------------------------------------------- */
+main { padding: 2.5rem 0 3rem; }
+
+section { margin-bottom: 3rem; }
+section:last-child { margin-bottom: 0; }
+
+.section-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.85rem;
+  color: #3A3F4B;
+  border-bottom: 2px solid #C9A050;
+  padding-bottom: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+
+/* --- Cards -------------------------------------------------- */
+.card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.05);
+  border: 1px solid #E8E0D0;
+}
+.card h3 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  color: #3A3F4B;
+  margin-bottom: 0.6rem;
+}
+.card-alt { background: #F0ECE4; }
+.card-gold-left { border-left: 4px solid #C9A050; }
+
+/* --- Grids -------------------------------------------------- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+@media (min-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 768px) {
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* --- Buttons ------------------------------------------------ */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.3rem;
+  border-radius: 4px;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1.2;
+}
+.btn:hover { text-decoration: none; }
+
+.btn-primary {
+  background: #3A3F4B;
+  color: #fff;
+  border-color: #3A3F4B;
+}
+.btn-primary:hover { background: #2D3240; border-color: #2D3240; color: #fff; }
+
+.btn-gold {
+  background: #C9A050;
+  color: #fff;
+  border-color: #C9A050;
+}
+.btn-gold:hover { background: #B88C3E; border-color: #B88C3E; color: #fff; }
+
+.btn-outline {
+  background: transparent;
+  color: #3A3F4B;
+  border-color: #3A3F4B;
+}
+.btn-outline:hover { background: #3A3F4B; color: #fff; }
+
+.btn-outline-white {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,0.55);
+}
+.btn-outline-white:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+/* --- Schedule rows ------------------------------------------ */
+.schedule-row {
+  display: flex;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #E8E0D0;
+  align-items: flex-start;
+}
+.schedule-row:last-child { border-bottom: none; }
+.schedule-day {
+  min-width: 96px;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #3A3F4B;
+  padding-top: 0.05rem;
+}
+.schedule-detail { font-size: 0.95rem; color: #5A4A3A; line-height: 1.5; }
+.schedule-detail strong { color: #1C1C1C; }
+
+/* --- Scripture / quote block -------------------------------- */
+.scripture-block {
+  background: #F0ECE4;
+  border-left: 4px solid #C9A050;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1.5rem 0;
+}
+.scripture-block blockquote {
+  margin: 0;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #3A3F4B;
+}
+.scripture-block cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #5A4A3A;
+  font-style: normal;
+}
+
+/* --- Pastoral team cards ------------------------------------ */
+.team-card { text-align: center; }
+.team-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #E8E0D0;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5A4A3A;
+  font-size: 0.8rem;
+  overflow: hidden;
+  border: 3px solid #C9A050;
+}
+.team-photo img { width: 100%; height: 100%; object-fit: cover; }
+.team-name {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3A3F4B;
+  margin-bottom: 0.2rem;
+}
+.team-role {
+  font-style: italic;
+  color: #C9A050;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+.team-bio { font-size: 0.95rem; color: #5A4A3A; }
+
+/* --- Announcements ----------------------------------------- */
+.announcement {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #E8E0D0;
+}
+.announcement:last-child { border-bottom: none; }
+.announcement-date {
+  font-size: 0.82rem;
+  color: #C9A050;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.2rem;
+}
+.announcement h3 { font-size: 1.15rem; margin-bottom: 0.25rem; }
+
+/* --- Contact form ------------------------------------------ */
+.form-group { margin-bottom: 1.25rem; }
+.form-group label {
+  display: block;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+  color: #3A3F4B;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #C8BCA8;
+  border-radius: 4px;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.97rem;
+  background: #fff;
+  color: #1C1C1C;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid #C9A050;
+  border-color: #C9A050;
+}
+
+/* --- CTA strip --------------------------------------------- */
+.cta-strip {
+  background: #3A3F4B;
+  color: #fff;
+  padding: 2.75rem 0;
+  text-align: center;
+}
+.cta-strip h2 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 2.1rem;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.cta-strip p {
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.35rem;
+  font-style: italic;
+}
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* --- Partners list ----------------------------------------- */
+.partner-tag {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #C9A050;
+  color: #3A3F4B;
+  padding: 0.4rem 0.85rem;
+  border-radius: 4px;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.97rem;
+  margin: 0.25rem;
+}
+
+/* --- Location card ----------------------------------------- */
+.location-label {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #C9A050;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.location-host {
+  font-style: italic;
+  color: #5A4A3A;
+  font-size: 0.92rem;
+  margin-bottom: 0.35rem;
+}
+
+/* --- Site footer ------------------------------------------- */
+.site-footer {
+  background: #3A3F4B;
+  color: rgba(255,255,255,0.85);
+  padding: 2rem 0 0;
+  margin-top: 3rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; }
+}
+.footer-logo {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 0.6rem;
+}
+.footer-logo img {
+  width: 100%;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+.footer-name {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.footer-tagline {
+  font-style: italic;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.6);
+}
+.footer-section-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #C9A050;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.85rem;
+}
+.site-footer p { font-size: 0.92rem; line-height: 1.6; margin-bottom: 0.5rem; }
+.site-footer a { color: rgba(255,255,255,0.8); }
+.site-footer a:hover { color: #C9A050; text-decoration: none; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 0.8rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.45);
+}
+.footer-bottom a { color: rgba(255,255,255,0.55); }
+.footer-bottom a:hover { color: #C9A050; }
+
+/* --- Utilities ---------------------------------------------- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.text-muted { color: #5A4A3A; }
+.text-center { text-align: center; }
+.text-gold { color: #C9A050; }
+.mt-sm { margin-top: 0.5rem; }
+.mt-md { margin-top: 1rem; }
+.mt-lg { margin-top: 1.75rem; }
+.mb-0 { margin-bottom: 0; }
+.gap-sm { gap: 0.5rem; }

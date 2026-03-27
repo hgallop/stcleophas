@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact &amp; Visit — Saint Cleophas Outreach Ministry</title>
+<meta name="description" content="Contact Saint Cleophas Outreach Ministry, find our locations in Collinsville and Martinsville, Virginia, and plan your visit." />
+<meta name="theme-color" content="#3A3F4B" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" role="banner">
+  <div class="glass-strip" aria-hidden="true"></div>
+  <div class="container">
+    <div class="topbar">
+      <a href="index.html" class="brand" aria-label="Saint Cleophas Outreach Ministry — home">
+        <div class="brand-logo">
+          <img src="assets/logo.png" alt="" aria-hidden="true" />
+        </div>
+        <div class="brand-text">
+          <span class="site-name">Saint Cleophas Outreach Ministry</span>
+          <span class="site-tagline">Recognizing Christ in the Stranger</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false"
+        onclick="var n=document.querySelector('nav.primary-nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">&#9776;</button>
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="mass-times.html">Mass Times</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="news.html">News</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PAGE HERO ===================== -->
+<div class="page-hero" role="banner">
+  <div class="container">
+    <h1>Contact &amp; Visit</h1>
+    <p>We would love to welcome you &mdash; reach out by phone, email, or the form below</p>
+  </div>
+</div>
+<div class="glass-strip" aria-hidden="true"></div>
+
+<!-- ===================== MAIN ===================== -->
+<main id="main" tabindex="-1">
+  <div class="container">
+
+    <!-- Locations -->
+    <section aria-labelledby="locations-heading">
+      <h2 class="section-title" id="locations-heading">Our Locations</h2>
+      <div class="grid-2">
+
+        <article class="card card-gold-left" aria-labelledby="collinsville-loc">
+          <div class="location-label">Sunday Worship</div>
+          <h3 id="collinsville-loc">Collinsville</h3>
+          <p class="location-host">Smith Memorial United Methodist Church Chapel</p>
+          <p class="text-muted">
+            2703 Daniels Creek Rd<br>
+            Collinsville, Virginia 24078
+          </p>
+          <p class="text-muted" style="margin-top:0.75rem;">
+            <strong>Sunday Mass:</strong> 3:00 PM<br>
+            <strong>Confession:</strong> 2:30 PM (30 min before Mass)
+          </p>
+          <p style="margin-top:0.75rem;">
+            <a href="https://maps.google.com/?q=2703+Daniels+Creek+Rd+Collinsville+VA+24078"
+               target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.92rem; padding:0.45rem 1rem;">
+              Get Directions
+            </a>
+          </p>
+        </article>
+
+        <article class="card card-gold-left" aria-labelledby="martinsville-loc">
+          <div class="location-label">Weekday Worship &amp; Parish Office</div>
+          <h3 id="martinsville-loc">Martinsville</h3>
+          <p class="location-host">First Baptist Church Martinsville</p>
+          <p class="text-muted">
+            23 Starling Ave<br>
+            Martinsville, Virginia 24112
+          </p>
+          <p class="text-muted" style="margin-top:0.75rem;">
+            <strong>Wednesday Mass:</strong> 12:00 PM<br>
+            <strong>Friday Mass:</strong> 12:00 PM<br>
+            <strong>Office Hours:</strong> Mon 9–5 &middot; Tue 12–5 &middot; Wed–Thu 9–5
+          </p>
+          <p style="margin-top:0.75rem;">
+            <a href="https://maps.google.com/?q=23+Starling+Ave+Martinsville+VA+24112"
+               target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.92rem; padding:0.45rem 1rem;">
+              Get Directions
+            </a>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Direct contact -->
+    <section aria-labelledby="direct-contact-heading">
+      <h2 class="section-title" id="direct-contact-heading">Get in Touch</h2>
+      <div class="grid-2" style="align-items:start;">
+
+        <!-- Contact form -->
+        <div>
+          <div class="card">
+            <h3>Send a Message</h3>
+            <p class="text-muted" style="font-size:0.92rem; margin-bottom:1rem;">Use this form to plan a visit, request pastoral care, ask a question, or express interest in volunteering. We aim to respond within one business day.</p>
+
+            <!--
+              FORM NOTE: This form uses a mailto: action which opens the user's
+              email client. For a fully web-based form, replace the action with
+              a Formspree (https://formspree.io) or Netlify Forms endpoint.
+              Example Formspree action: action="https://formspree.io/f/YOUR_ID"
+            -->
+            <form action="mailto:st.cleophasoutreach@gmail.com" method="post" enctype="text/plain"
+                  aria-label="Contact form">
+              <div class="form-group">
+                <label for="contact-name">Name <span aria-hidden="true">*</span></label>
+                <input id="contact-name" name="name" type="text" required
+                       placeholder="Your name" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email address <span aria-hidden="true">*</span></label>
+                <input id="contact-email" name="email" type="email" required
+                       placeholder="your@email.com" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone (optional)</label>
+                <input id="contact-phone" name="phone" type="tel"
+                       placeholder="(000) 000-0000" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="contact-reason">Reason for contact</label>
+                <select id="contact-reason" name="reason">
+                  <option value="">Please select&hellip;</option>
+                  <option value="visit">Planning a visit</option>
+                  <option value="pastoral">Pastoral care request</option>
+                  <option value="sacrament">Sacrament enquiry</option>
+                  <option value="volunteer">Volunteering</option>
+                  <option value="partnership">Partnership enquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="contact-message" name="message" rows="5" required
+                          placeholder="How can we help?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Direct info -->
+        <div style="display:flex; flex-direction:column; gap:1.25rem;">
+
+          <div class="card card-alt">
+            <h3>Phone &amp; Email</h3>
+            <p class="text-muted">
+              <strong>Phone:</strong><br>
+              <a href="tel:+12763889004" style="font-size:1.15rem; font-family:'EB Garamond',Georgia,serif;">(276) 388-9004</a>
+            </p>
+            <p class="text-muted" style="margin-top:0.5rem;">
+              <strong>Email:</strong><br>
+              <a href="mailto:st.cleophasoutreach@gmail.com">st.cleophasoutreach@gmail.com</a>
+            </p>
+            <p class="text-muted" style="font-size:0.88rem; margin-top:0.75rem; border-top:1px solid #D0C8B8; padding-top:0.75rem;">
+              For urgent pastoral needs outside office hours, please call the number above.
+            </p>
+          </div>
+
+          <div class="card card-alt">
+            <h3>Office Hours</h3>
+            <div class="schedule-row" style="padding:0.5rem 0;">
+              <div class="schedule-day">Monday</div>
+              <div class="schedule-detail">9:00 AM – 5:00 PM</div>
+            </div>
+            <div class="schedule-row" style="padding:0.5rem 0;">
+              <div class="schedule-day">Tuesday</div>
+              <div class="schedule-detail">12:00 PM – 5:00 PM</div>
+            </div>
+            <div class="schedule-row" style="padding:0.5rem 0;">
+              <div class="schedule-day">Wednesday</div>
+              <div class="schedule-detail">9:00 AM – 5:00 PM</div>
+            </div>
+            <div class="schedule-row" style="padding:0.5rem 0;">
+              <div class="schedule-day">Thursday</div>
+              <div class="schedule-detail">9:00 AM – 5:00 PM</div>
+            </div>
+            <p class="text-muted" style="font-size:0.88rem; margin-top:0.5rem;">Confession &amp; Anointing of the Sick available during office hours.</p>
+          </div>
+
+          <div class="card card-alt">
+            <h3>Follow Us on Facebook</h3>
+            <p class="text-muted" style="font-size:0.92rem;">Sunday Mass, Morning Prayer, and Evening Prayer are all live streamed on our Facebook page.</p>
+            <a href="https://www.facebook.com/profile.php?id=61555982034414" target="_blank" rel="noopener"
+               class="btn btn-primary" style="margin-top:0.5rem;">
+              Visit our Facebook Page
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="" aria-hidden="true" />
+        </div>
+        <div class="footer-name">Saint Cleophas Outreach Ministry</div>
+        <div class="footer-tagline">Recognizing Christ in the Stranger</div>
+      </div>
+      <div>
+        <div class="footer-section-title">Collinsville</div>
+        <p>Smith Memorial UMC Chapel<br>
+        2703 Daniels Creek Rd<br>
+        Collinsville, VA 24078<br>
+        <em>Sunday Mass 3:00 PM</em></p>
+      </div>
+      <div>
+        <div class="footer-section-title">Martinsville</div>
+        <p>First Baptist Church Chapel<br>
+        23 Starling Ave<br>
+        Martinsville, VA 24112<br>
+        <em>Wed &amp; Fri Mass 12:00 PM</em></p>
+        <p>
+          <a href="tel:+12763889004">(276) 388-9004</a><br>
+          <a href="mailto:st.cleophasoutreach@gmail.com">st.cleophasoutreach@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      &copy; <span id="year"></span> Saint Cleophas Outreach Ministry &nbsp;&middot;&nbsp;
+      <a href="https://www.facebook.com/profile.php?id=61555982034414" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+  <div class="glass-strip" aria-hidden="true"></div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
