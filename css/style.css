@@ -630,6 +630,16 @@ section.cta-strip { margin-bottom: 0; }
 .footer-bottom a { color: rgba(255,255,255,0.55); }
 .footer-bottom a:hover { color: #C9A050; }
 
+/* --- Footer affiliation line -------------------------------- */
+.footer-affiliation {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+.footer-affiliation a { color: rgba(255,255,255,0.6); }
+.footer-affiliation a:hover { color: #C9A050; text-decoration: none; }
+
 /* --- Utilities ---------------------------------------------- */
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0;
