@@ -1,6 +1,6 @@
 # Saint Cleophas Outreach Ministry
 
-> A parish of the Reformed Catholic Church serving Martinsville and Collinsville, Virginia. Rooted in the Anglican liturgical tradition — the 1979 Book of Common Prayer, the Revised Common Lectionary, and the Hymnal 1982 — the ministry is dedicated to recognizing the face of Christ in marginalized people. Tagline: "Recognizing Christ in the Stranger." Pastor: Rev. Fr. Mychal Gallop.
+> A parish of the Reformed Catholic Church, within the Diocese of Our Lady, Queen of Martyrs, serving Martinsville and Collinsville, Virginia. The parish worships in the Anglican liturgical tradition — the 1979 Book of Common Prayer, the Revised Common Lectionary, and the Hymnal 1982. The Reformed Catholic Church is an independent Catholic jurisdiction (not Anglican); the Anglican liturgy is the parish's own practice. Dedicated to recognizing the face of Christ in marginalized people. Tagline: "Recognizing Christ in the Stranger." Pastor: Rev. Fr. Mychal Gallop.
 
 ## Worship
 
@@ -10,6 +10,7 @@
 ## About
 
 - [Home](index.html): Welcome, mission overview, and the story of Saint Cleophas and the Road to Emmaus (Luke 24:13–35).
+- [Our Church](church.html): Denominational identity. Saint Cleophas is a parish of the Reformed Catholic Church (reformedcatholic.org), within the Diocese of Our Lady, Queen of Martyrs (queen-of-martyrs.com). Explains the three-tier structure (parish → diocese → denomination), the RCC's Catholic heritage and inclusive theology, and the parish's Anglican liturgical tradition.
 - [Ministries & Outreach](ministries.html): Worship, pastoral care, Bible study, and community-based outreach, with particular attention to people experiencing housing insecurity, poverty, or social isolation.
 - [Partners & Collaborators](partners.html): Ecumenical partners including Smith Memorial United Methodist Church (Collinsville) and First Baptist Church (Martinsville).
 
@@ -20,3 +21,5 @@
 ## Optional
 
 - [Facebook](https://www.facebook.com/profile.php?id=61555982034414): Live-streamed Sunday Mass, Morning Prayer, and Evening Prayer.
+- [Reformed Catholic Church](https://www.reformedcatholic.org/): The denomination Saint Cleophas belongs to.
+- [Diocese of Our Lady, Queen of Martyrs](https://www.queen-of-martyrs.com/): The regional diocese within the RCC.
