@@ -304,7 +304,8 @@ nav.primary-nav a.active {
 /* --- Main content ------------------------------------------- */
 main { padding: 2.5rem 0 3rem; }
 
-section { margin-bottom: 3rem; }
+section { margin: 3rem 0; }
+section:first-child { margin-top: 0; }
 section:last-child { margin-bottom: 0; }
 
 .section-title {
@@ -313,6 +314,7 @@ section:last-child { margin-bottom: 0; }
   color: #3A3F4B;
   border-bottom: 2px solid #C9A050;
   padding-bottom: 0.35rem;
+  margin-top: 0.25rem;
   margin-bottom: 1.25rem;
 }
 
