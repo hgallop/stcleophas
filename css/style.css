@@ -217,6 +217,7 @@ nav.primary-nav a.active {
   background: #3A3F4B;
   color: #fff;
   padding: 3rem 0 3.5rem;
+  margin: 0;
 }
 .home-hero-inner {
   display: grid;
