@@ -197,6 +197,7 @@ nav.primary-nav a.active {
   color: #fff;
   padding: 2.5rem 0 2.25rem;
   text-align: center;
+  margin: 0;
 }
 .page-hero h1 {
   font-family: 'EB Garamond', Georgia, serif;
