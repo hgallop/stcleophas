@@ -1,6 +1,6 @@
 # Saint Cleophas Outreach Ministry
 
-> A parish of the Reformed Catholic Church, within the Diocese of Our Lady, Queen of Martyrs, serving Martinsville and Collinsville, Virginia. The parish worships in the Anglican liturgical tradition — the 1979 Book of Common Prayer, the Revised Common Lectionary, and the Hymnal 1982. The Reformed Catholic Church is an independent Catholic jurisdiction (not Anglican); the Anglican liturgy is the parish's own practice. Dedicated to recognizing the face of Christ in marginalized people. Tagline: "Recognizing Christ in the Stranger." Pastor: The Very Rev. Fr. Mychal Joseph Gallop, who also serves as Vicar General of the Diocese of Our Lady, Queen of Martyrs.
+> An independent sacramental parish rooted in the Anglican liturgical tradition, serving Martinsville and Collinsville, Virginia. Part of the independent sacramental movement, the parish worships using the 1979 Book of Common Prayer, the Revised Common Lectionary, and the Hymnal 1982. Dedicated to recognizing the face of Christ in marginalized people. Tagline: "Recognizing Christ in the Stranger." Pastor: The Very Rev. Fr. Mychal Joseph Gallop.
 
 ## Worship
 
@@ -10,7 +10,7 @@
 ## About
 
 - [Home](https://stcleophasministry.com/index.html): Welcome, mission overview, and the story of Saint Cleophas and the Road to Emmaus (Luke 24:13–35).
-- [Our Church](https://stcleophasministry.com/church.html): Denominational identity. Saint Cleophas is a parish of the Reformed Catholic Church (reformedcatholic.org), within the Diocese of Our Lady, Queen of Martyrs (queen-of-martyrs.com). Explains the three-tier structure (parish → diocese → denomination), the RCC's Catholic heritage and inclusive theology, and the parish's Anglican liturgical tradition.
+- [Our Church](https://stcleophasministry.com/church.html): Parish identity. Saint Cleophas is an independent sacramental parish rooted in the Anglican liturgical tradition, part of the independent sacramental movement. Explains the parish's identity, its liturgical tradition, and its mission of radical welcome.
 - [Ministries & Outreach](https://stcleophasministry.com/ministries.html): Worship, pastoral care, Bible study, and community-based outreach, with particular attention to people experiencing housing insecurity, poverty, or social isolation. Includes the Pastoral Team: The Very Rev. Fr. Mychal Joseph Gallop (Pastor), Kato Padgett (Lay Minister), and John Fulcher (Music Minister).
 - [Partners & Collaborators](https://stcleophasministry.com/partners.html): Ecumenical partners. Hosting partners: Smith Memorial United Methodist Church (Collinsville) and First Baptist Church (Martinsville). Community partners: Forest Park Country Club — Clubhouse Grill, First United Methodist Church (Uptown Ministry Center), Holy Trinity Lutheran Church, and Chatham Heights Baptist Church.
 
@@ -21,5 +21,3 @@
 ## Optional
 
 - [Facebook](https://www.facebook.com/profile.php?id=61555982034414): Live-streamed Sunday Mass and parish updates.
-- [Reformed Catholic Church](https://www.reformedcatholic.org/): The denomination Saint Cleophas belongs to.
-- [Diocese of Our Lady, Queen of Martyrs](https://www.queen-of-martyrs.com/): The regional diocese within the RCC.
